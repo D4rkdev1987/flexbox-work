@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1'>
+  <title></title>
+
+  <style>
+      body {
+          margin: 0;
+          padding: 0;
+      }
+      /* everytime you place display flex it makes a flex container */
+      /* when you say display fex and align items directly impacts that div */
+      .container {
+          margin: 0;
+          height: calc(100vh - 20px);
+          width: calc(100vw - 20px);
+          border: 10px solid red;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;  /* row based direction */
+      }
+      /* below display flex and flex direction affects the image container*/
+      .container > .image-blocks {
+          display: flex;
+          flex-direction: row; /* to stack images */
+          justify-content: center;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+      <div class="image-blocks">
+          <img src="https://source.unsplash.com/random/150x150" alt="">
+          <img src="https://source.unsplash.com/random/150x150" alt="">
+          <img src="https://source.unsplash.com/random/150x150" alt="">
+      </div>
+  </div>
+</body>
+</html>
